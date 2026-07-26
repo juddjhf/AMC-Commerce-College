@@ -1,0 +1,270 @@
+/* ===========================
+        ABOUT BANNER
+=========================== */
+
+.about-banner {
+    height: 55vh;
+    background: linear-gradient(rgba(13, 71, 161, .75), rgba(13, 71, 161, .75)),
+        url("../images/campus.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.banner-content {
+    max-width: 800px;
+}
+
+.banner-content h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* ===========================
+        ABOUT SECTION
+=========================== */
+
+.about-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.about-section .card {
+    padding: 40px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.about-section p {
+    line-height: 1.9;
+    color: #555;
+}
+
+/* ===========================
+      MISSION & VISION
+=========================== */
+
+.mission {
+    padding: 80px 0;
+    background: #f5f7fa;
+}
+
+.mission .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.mission .card {
+    padding: 35px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.mission h2 {
+    color: #0D47A1;
+    margin-bottom: 20px;
+}
+
+.mission p {
+    line-height: 1.8;
+}
+
+/* ===========================
+        WHY US
+=========================== */
+
+.why-us {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.why-us .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.why-us .card {
+    text-align: center;
+    padding: 35px 25px;
+}
+
+.why-us h3 {
+    color: #0D47A1;
+    margin-bottom: 15px;
+}
+
+/* ===========================
+      ACHIEVEMENTS
+=========================== */
+
+.achievements {
+    padding: 80px 0;
+    background: #0D47A1;
+    color: #fff;
+}
+
+.achievements .section-title h2 {
+    color: #fff;
+}
+
+.achievements .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.achievements .card {
+    background: #1565C0;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 12px;
+}
+
+.achievements .card h2 {
+    font-size: 42px;
+    color: #FFC107;
+    margin-bottom: 10px;
+}
+
+.achievements .card p {
+    color: #fff;
+}
+
+/* ===========================
+        FACILITIES
+=========================== */
+
+.facilities {
+    padding: 80px 0;
+    background: #f5f7fa;
+}
+
+.facilities .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.facilities .card {
+    padding: 35px 25px;
+    text-align: center;
+}
+
+.facilities h3 {
+    color: #0D47A1;
+    margin-bottom: 15px;
+}
+
+.facilities p {
+    line-height: 1.7;
+}
+
+/* ===========================
+      COMMON CARD
+=========================== */
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+}
+
+/* ===========================
+      SECTION TITLE
+=========================== */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    color: #0D47A1;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: #666;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media(max-width:992px) {
+
+    .mission .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .why-us .grid-4,
+    .achievements .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .facilities .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .about-banner {
+        height: 45vh;
+    }
+
+    .banner-content h1 {
+        font-size: 36px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+    }
+
+    .why-us .grid-4,
+    .achievements .grid-4,
+    .facilities .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section .card,
+    .mission .card,
+    .facilities .card {
+        padding: 25px;
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .banner-content h1 {
+        font-size: 30px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+}

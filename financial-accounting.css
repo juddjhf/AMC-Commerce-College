@@ -1,0 +1,315 @@
+/* ==========================
+        HERO SECTION
+========================== */
+
+.hero {
+    margin-top: 80px;
+    min-height: 70vh;
+    background: linear-gradient(135deg, #0D47A1, #1565C0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* ==========================
+        CONTAINER
+========================== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ==========================
+        SECTION
+========================== */
+
+.section {
+    padding: 80px 0;
+}
+
+.gray {
+    background: #f5f7fa;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    color: #0D47A1;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: #666;
+}
+
+/* ==========================
+        GRID
+========================== */
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* ==========================
+        CARD
+========================== */
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+    margin-bottom: 25px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+}
+
+.card h3 {
+    color: #0D47A1;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    color: #1565C0;
+    margin: 15px 0;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.8;
+}
+
+/* ==========================
+        LIST
+========================== */
+
+.list {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.list li {
+    background: #fff;
+    list-style: none;
+    padding: 15px 20px;
+    border-left: 5px solid #FFC107;
+    border-radius: 8px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .05);
+}
+
+/* ==========================
+        UL INSIDE CARD
+========================== */
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card ul li {
+    margin-bottom: 12px;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* ==========================
+        TABLE
+========================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+}
+
+table th {
+    background: #0D47A1;
+    color: #fff;
+    padding: 16px;
+    text-align: left;
+}
+
+table td {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background: #f7f7f7;
+}
+
+/* ==========================
+        BUTTON
+========================== */
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: #FFC107;
+    color: #222;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #ffb300;
+    transform: translateY(-2px);
+}
+
+/* ==========================
+        CTA
+========================== */
+
+.cta {
+    background: #0D47A1;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+/* ==========================
+        FOOTER
+========================== */
+
+footer {
+    background: #081c3b;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #ddd;
+    margin-top: 10px;
+}
+
+/* ==========================
+        RESPONSIVE
+========================== */
+
+@media(max-width:992px) {
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .hero {
+        min-height: 60vh;
+        margin-top: 120px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .cta h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+}

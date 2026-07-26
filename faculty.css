@@ -1,0 +1,296 @@
+/* ===========================
+        FACULTY BANNER
+=========================== */
+
+.faculty-banner {
+    height: 55vh;
+    background: linear-gradient(rgba(13, 71, 161, .80), rgba(13, 71, 161, .80));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.banner-content {
+    max-width: 800px;
+}
+
+.banner-content h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* ===========================
+        PRINCIPAL
+=========================== */
+
+.principal {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.principal-card {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 45px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+    text-align: center;
+}
+
+.principal-card h2 {
+    color: #0D47A1;
+    margin-bottom: 15px;
+}
+
+.principal-card h3 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.principal-card h4 {
+    color: #FFC107;
+    margin-bottom: 25px;
+}
+
+.principal-card p {
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* ===========================
+            HOD
+=========================== */
+
+.hod {
+    padding: 80px 0;
+    background: #f5f7fa;
+}
+
+.hod .card {
+    max-width: 750px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.hod h3 {
+    color: #0D47A1;
+    margin-bottom: 10px;
+}
+
+.hod h4 {
+    color: #FFC107;
+    margin-bottom: 20px;
+}
+
+.hod p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+/* ===========================
+      FACULTY MEMBERS
+=========================== */
+
+.faculty-members {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.faculty-members .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.faculty-members .card {
+    text-align: center;
+    padding: 35px 25px;
+}
+
+.faculty-members h3 {
+    color: #0D47A1;
+    margin-bottom: 10px;
+}
+
+.faculty-members h4 {
+    color: #FFC107;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+.faculty-members p {
+    color: #555;
+    margin-bottom: 8px;
+    line-height: 1.7;
+}
+
+/* ===========================
+      FACULTY STATS
+=========================== */
+
+.faculty-stats {
+    padding: 80px 0;
+    background: #0D47A1;
+}
+
+.faculty-stats .section-title h2 {
+    color: #fff;
+}
+
+.faculty-stats .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.faculty-stats .card {
+    background: #1565C0;
+    color: #fff;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.faculty-stats .card h2 {
+    font-size: 42px;
+    color: #FFC107;
+    margin-bottom: 10px;
+}
+
+.faculty-stats .card p {
+    color: #fff;
+}
+
+/* ===========================
+      FACULTY FEATURES
+=========================== */
+
+.faculty-features {
+    padding: 80px 0;
+    background: #f5f7fa;
+}
+
+.faculty-features .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.faculty-features .card {
+    text-align: center;
+    padding: 35px 25px;
+}
+
+.faculty-features h3 {
+    color: #0D47A1;
+    margin-bottom: 15px;
+}
+
+.faculty-features p {
+    color: #555;
+    line-height: 1.8;
+}
+
+/* ===========================
+      COMMON CARD
+=========================== */
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+}
+
+/* ===========================
+      SECTION TITLE
+=========================== */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #0D47A1;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: #666;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media(max-width:992px) {
+
+    .faculty-members .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .faculty-stats .grid-4,
+    .faculty-features .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .faculty-banner {
+        height: 45vh;
+    }
+
+    .banner-content h1 {
+        font-size: 36px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+    }
+
+    .faculty-members .grid-3,
+    .faculty-stats .grid-4,
+    .faculty-features .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .principal-card,
+    .hod .card {
+        padding: 25px;
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .banner-content h1 {
+        font-size: 30px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+}
